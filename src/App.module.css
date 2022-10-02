@@ -1,0 +1,23 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+    alling-itens: flex-start;
+}
+
+/* Definindo responsividade para telas menores que 768px. */
+@media (max-width: 768px) {
+    html {
+        /* Definição de fonte proporcional a 14px/16px(padrão)=0,875. */
+        font-size: 87,5%;
+    }
+
+    .wrapper {
+        /* Define todo o conteúdo em apenas uma coluna. */
+        grid-template-columns: 1fr;
+    }
+} 
