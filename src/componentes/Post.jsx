@@ -7,7 +7,9 @@ import styles from './Post.module.css'
 
 export function Post({ author, publishedAt }) {
 
-const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH':'mm'h'")
+console.log(publishedAt)
+
+const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'")
 
     return (
         <article className={styles.post}>
