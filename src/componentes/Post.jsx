@@ -1,15 +1,21 @@
-import { format }  from 'date-fns';
+import { format, formatDistanceToNow }  from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR'
 
 import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 
 import styles from './Post.module.css'
 
-export function Post({ author, publishedAt }) {
+export function Post({ author, publishedAt, content }) {
 
-console.log(publishedAt)
+const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+    locale: ptBR
+})
 
-const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'")
+const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+    locale: ptBR,
+    addSuffix: 'true'
+})
 
     return (
         <article className={styles.post}>
@@ -24,13 +30,20 @@ const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'")
                     </div>
                 </div>
 
-                <time title='' dateTime="2022-05-11 08:00:00">
-                    {publishedDateFormatted}
+                <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>
+                    {publishedDateRelativeToNow}
                 </time>
             </header>
 
             <div className={styles.content}>
 
+                {content.map(line => {
+                    if (line.type === 'paragraph') {
+                        return <p>{line.content}</p>
+                    } else if (line.type === 'link') {
+                        return <p><a href="#">{line.content}</a></p>
+                    }
+                })}
             </div>
 
             <form className={styles.commentForm}>
