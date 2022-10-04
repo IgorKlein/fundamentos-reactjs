@@ -1,21 +1,45 @@
-import { format, formatDistanceToNow }  from 'date-fns';
+import { format, formatDistanceToNow } from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
+import { useState } from 'react';
 
 import { Avatar } from './Avatar'
 import { Comment } from './Comment'
 
 import styles from './Post.module.css'
 
+// estado: variáveis que eu quero que o componente monitore.
+
 export function Post({ author, publishedAt, content }) {
 
-const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
-    locale: ptBR
-})
+    //useState retorna duas variáveis que podem ser desestruturadas
+    const [comments, setComments] = useState([
+        "Post muito bacana, hein?!"
+    ])
 
-const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
-    locale: ptBR,
-    addSuffix: 'true'
-})
+    const [newCommentText, setNewCommentText] = useState('')
+
+    const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+        locale: ptBR
+    })
+
+    const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+        locale: ptBR,
+        addSuffix: 'true'
+    })
+
+    function handleCreateNewComment() {
+        event.preventDefault()
+
+        const newCommentText = (event.target.comment.value)
+        // console.log(event.target.comment.value)
+
+        setComments([...comments, newCommentText])
+        setNewCommentText("")
+    }
+
+    function handleCreateNewCommentChange() {
+        setNewCommentText(event.target.value)
+    }
 
     return (
         <article className={styles.post}>
@@ -23,7 +47,7 @@ const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
                 <div className={styles.author}>
                     {/* Propriedade passada sem igualdade equivale a ela própria = true */}
                     {/* <Avatar hasBorder src="https://github.com/filipedeschamps.png" alt="" /> */}
-                    <Avatar src={author.avatarUrl}/>
+                    <Avatar src={author.avatarUrl} />
                     <div className={styles.authorInfo}>
                         <strong>{author.name}</strong>
                         <span>{author.role}</span>
@@ -46,11 +70,14 @@ const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
                 })}
             </div>
 
-            <form className={styles.commentForm}>
+            <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
                 <strong>Deixe seu feedback</strong>
 
-                <textarea
+                <textarea 
+                    name="comment"
                     placeholder='Deixe o seu comentário.'
+                    value={newCommentText}
+                    onChange={handleCreateNewCommentChange}
                 />
 
                 <footer>
@@ -58,10 +85,11 @@ const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
                 </footer>
 
             </form>
+
             <div className={styles.commentList}>
-                <Comment />
-                <Comment />
-                <Comment />
+                {comments.map(comment => {
+                    return <Comment content={comment}/>
+                })}
             </div>
         </article>
     )
