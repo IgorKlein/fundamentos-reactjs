@@ -7,6 +7,7 @@ import styles from './Comment.module.css';
 export function Comment({ content, onDeleteComment }) {
     function handleDeleteComment() {
         onDeleteComment(content)
+        console.log('Post a ser deletado: ' + {content})
     }
 
     return (

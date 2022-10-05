@@ -31,7 +31,6 @@ export function Post({ author, publishedAt, content }) {
         event.preventDefault()
 
         const newCommentText = (event.target.comment.value)
-        // console.log(event.target.comment.value)
 
         setComments([...comments, newCommentText])
         setNewCommentText("")
@@ -41,8 +40,12 @@ export function Post({ author, publishedAt, content }) {
         setNewCommentText(event.target.value)
     }
 
-    function deleteComment(comment) {
-        console.log(`Deletar o comentário: ${comment}`)
+    function deleteComment(commentToDelete) {
+        const commentsWithoutDeletedOne = comments.filter(comment => {
+            return (comment !== commentToDelete)
+        })
+
+        setComments(commentsWithoutDeletedOne)
     }
 
     return (
