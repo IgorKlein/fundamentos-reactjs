@@ -1,10 +1,106 @@
-# MARKDOWN TESTING
+<h1 align="left">
+    <img alt="Ignite Feed Logo" title="Ignite Feed Logo" src="./src/assets/ignite-logo.svg">
+    Ignite Feed
+</h1>
 
-This is a simple test of the Markdown Editing Tool used for create README files.
+<br>
 
-## How to do it?
+## 1. 🏁 List of Contents
 
-In order to find out if this tool really works, it may be necessary to organize the tasks as it following:
+- [1. 🏁 List of Contents](#1--list-of-contents)
+- [2. 👉 Description](#2--description)
+- [3. 🚦 Project Status](#3--project-status)
+- [4. ⚙️ Features](#4-️-features)
+- [5. 🤩 Demonstration](#5--demonstration)
+- [6. ✅ Prerequisites](#6--prerequisites)
+- [7. 🚀 Technologies](#7--technologies)
+- [8. 🙏 Thanks](#8--thanks)
+- [9. ✌️ Author](#9-️-author)
+- [10. 📄 License](#10--license)
 
-- Create a new Markdown template;
-- Test this template, in the following bla bla vla
+<br>
+
+## 2. 👉 Description
+
+This project was and aimed to develop a simple page, similar to a social network, where the user can interact with the posts, adding and deleting comments.
+
+The project was developed as part of the Ignite Accelerator Program for Devs, with witch I could have my first contact with the ReactJS Framework fundamentals. 
+
+<br>
+
+## 3. 🚦 Project Status
+
+<h4 align="left">🚧 Sorry, but this project is under construction... 🚧</h4>
+
+<br>
+
+## 4. ⚙️ Features
+
+- The page shows the existing posts.
+- User can add a comment under any post.
+- User cannot add an empty comment.
+- User can delete any comment by clicking on the Trash icon.
+
+<br>
+
+## 5. 🤩 Demonstration
+
+You can test this project by clicking on this [link](https://chimerical-arithmetic-2b3687.netlify.app/).
+
+<br>
+
+## 6. ✅ Prerequisites
+
+Before you clone this project, you must have the following tools installed in your machine:
+- [Node.js](https://nodejs.org)
+- [Visual Studio Code]()
+- [git](https://github.com/)
+
+<br>
+
+## 7. 🚀 Technologies
+
+- HTML • CSS • JavaScript
+- ReactJS
+
+<br>
+
+## 8. 🙏 Thanks
+I'd like to thank for all the Rocketseat Team, specially to [Maik Brito](https://github.com/maykbrito) who always inspired me, through his videos, to consistently continue in pursuit of my dreams, and [Diego Fernandes](https://github.com/diego3g) for the excellent lessons and inspiring talks at every NLW Week I have attended.
+
+<br>
+
+## 9. ✌️ Author
+
+-------------------
+
+<table border="0">
+    <tr>
+        <td><img
+            src="https://www.github.com/IgorKlein.png" 
+            style="height:100px;border-radius:50%"
+            >
+        </td>
+        <td>
+            <h3>Igor Klein</h3>
+            <p>Este trabalho foi feito com muito ❤️ e dedicação.</p>
+            <p>Se quiser entrar em contato, sinta-se a vontade:<p>
+            <a href="https://www.linkedin.com/in/igor-klein/">
+                <img src="https://img.shields.io/badge/-IgorKlein-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-klein/">
+            </a>
+            <a href="mailto:igor.klein.sl@gmail.com">
+                <img src="https://img.shields.io/badge/-igor.klein.sl@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:igor.klein.sl@gmail.com">
+            </a>
+        </td>
+    </tr>
+</table>
+
+-------------------
+<br>
+
+## 10. 📄 License
+
+This project was developed under the **MIT License**. See the [LICENSE](#) file for details.
+
+
+
