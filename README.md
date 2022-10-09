@@ -56,26 +56,24 @@ I'd like to thank for all the Rocketseat Team, specially to [Maik Brito](https:/
 
 ## 9. ✌️ Author
 
-<table style="border-collapse">
-    <tr>
-        <td><img
-            src="https://www.github.com/IgorKlein.png" 
-            style="height:100px;border-radius:50%"
-            >
-        </td>
-        <td>
-            <h3>Igor Klein</h3>
-            <p>Este trabalho foi feito com muito ❤️ e dedicação.</p>
-            <p>Se quiser entrar em contato, sinta-se a vontade:<p>
-            <a href="https://www.linkedin.com/in/igor-klein/">
-                <img src="https://img.shields.io/badge/-IgorKlein-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-klein/">
-            </a>
-            <a href="mailto:igor.klein.sl@gmail.com">
-                <img src="https://img.shields.io/badge/-igor.klein.sl@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:igor.klein.sl@gmail.com">
-            </a>
-        </td>
-    </tr>
-</table>
+<div style="display:flex">
+    <div style="padding-right:1.5rem"><img
+        src="https://www.github.com/IgorKlein.png" 
+        style="height:100px;border-radius:50%"
+        >
+    </div>
+    <div>
+        <h3>Igor Klein</h3>
+        <p>Este trabalho foi feito com muito ❤️ e dedicação.</p>
+        <p>Se quiser entrar em contato, sinta-se a vontade:<p>
+        <a href="https://www.linkedin.com/in/igor-klein/">
+            <img src="https://img.shields.io/badge/-IgorKlein-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-klein/">
+        </a>
+        <a href="mailto:igor.klein.sl@gmail.com">
+            <img src="https://img.shields.io/badge/-igor.klein.sl@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:igor.klein.sl@gmail.com">
+        </a>
+    </div>
+</div>
 
 ## 10. 📄 License
 
