@@ -10,7 +10,7 @@
 - [3. 🚦 Project Status](#3--project-status)
 - [4. ⚙️ Features](#4-️-features)
 - [5. 🤩 Demonstration](#5--demonstration)
-- [6. ✅ Prerequisites](#6--prerequisites)
+- [6. ☑️ Prerequisites](#6-️-prerequisites)
 - [7. 🚀 Technologies](#7--technologies)
 - [8. 🙏 Thanks](#8--thanks)
 - [9. ✌️ Author](#9-️-author)
@@ -24,7 +24,8 @@ The project was developed as part of the Ignite Accelerator Program for Devs, wi
 
 ## 3. 🚦 Project Status
 
-<h4 align="left">🚧 Sorry, project under construction... 🚧</h4>
+<!-- <h4>✅ Project finished. ✅</h4> -->
+<h4>🚧 Warning, project under construction... 🚧</h4>
 
 ## 4. ⚙️ Features
 
@@ -37,7 +38,7 @@ The project was developed as part of the Ignite Accelerator Program for Devs, wi
 
 You can test this project by clicking on this [link](https://chimerical-arithmetic-2b3687.netlify.app/).
 
-## 6. ✅ Prerequisites
+## 6. ☑️ Prerequisites
 
 Before you clone this project, you must have the following tools installed in your machine:
 - [git](https://github.com/)
