@@ -64,7 +64,8 @@ I'd like to thank for all the Rocketseat Team, specially to [Maik Brito](https:/
 
 **Igor Klein**
 
-This work was developed with great care ❤️ and dedication 😅.
+This work was developed with great care ❤️ and dedication 😅.<br>
+I hope you enjoy it.
 
 <a href="https://www.linkedin.com/in/igor-klein/">
     <img src="https://img.shields.io/badge/-IgorKlein-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-klein/">
