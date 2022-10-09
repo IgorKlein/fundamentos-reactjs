@@ -14,7 +14,6 @@
 - [7. 🚀 Technologies](#7--technologies)
 - [8. 🙏 Thanks](#8--thanks)
 - [9. ✌️ Author](#9-️-author)
-  - [**Igor Klein**](#igor-klein)
 - [10. 📄 License](#10--license)
 
 ## 2. 👉 Description
@@ -62,10 +61,9 @@ I'd like to thank for all the Rocketseat Team, specially to [Maik Brito](https:/
     height="100px"
     >
 
-### **Igor Klein**
+**Igor Klein**
 
-Este trabalho foi feito com muito ❤️ e dedicação.<br>
-Se quiser entrar em contato, sinta-se a vontade:
+Este trabalho foi feito com muito ❤️ e dedicação.
 
 <a href="https://www.linkedin.com/in/igor-klein/">
     <img src="https://img.shields.io/badge/-IgorKlein-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/igor-klein/">
